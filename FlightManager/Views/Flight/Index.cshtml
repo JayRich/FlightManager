@@ -1,0 +1,166 @@
+﻿
+@{
+    var count_flights = ViewData["t_flights"];
+    var count_pass = ViewData["t_pass"];
+}
+
+<body style="background-color:lightgray; ">
+
+</body>
+<div class="container-fluid mx-auto">
+    <div class="row">
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body">
+
+                <a style="color:black" class="display-4" asp-action="All_Flights">All Flights</a>
+
+
+            </div>
+        </div>
+
+
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body display-4">
+                <a style="color:black" asp-action="Create_Flight">Create Flight</a>
+            </div>
+        </div>
+
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+
+            <div class="card-body">
+
+
+                <a style="color:black" class="display-4" asp-action="Search_Flight">Search Flights</a>
+
+            </div>
+        </div>
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body">
+
+                <a style="color:black" class="display-4" asp-action="Delete_Flight">Delete Flight</a>
+
+
+            </div>
+        </div>
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body">
+
+                <a style="color:black" class="display-4" asp-action="Update_Flight">Update Flight</a>
+
+
+            </div>
+        </div>
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body">
+
+                <a style="color:black" class="display-4" asp-area="" asp-controller="Passenger" asp-action="Search_Passenger">Search Passengers</a>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        
+
+
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body display-4">
+                <a style="color:black" asp-area="" asp-controller="Passenger" asp-action="Add_Passenger">Create Passenger</a>
+            </div>
+        </div>
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body display-4">
+                <a style="color:black" asp-area="" asp-controller="Passenger" asp-action="All_Passengers">All Passengers</a>
+            </div>
+        </div>
+        
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body display-4">
+                <a style="color:black" asp-area="" asp-controller="Passenger" asp-action="Update_Passenger">Update Passenger</a>
+            </div>
+        </div>
+        <div class="card col-lg-6 border-primary" style="background-color:darkgrey" style="width: 18rem;">
+            <div class="card-body display-4">
+                <a style="color:black" asp-area="" asp-controller="Passenger" asp-action="Delete_Passenger">Delete Passenger</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+                
+            
+                                <div class="container-fluid fixed-bottom">
+                                    <div class="card-group">
+
+                                        <div class="card border-primary" style="width: 12rem;">
+                                            <div class="card bg-light text-dark">
+                                                <div class="card-body" style="background-color:darkgrey">
+                                                    <div class="text-center">
+                                                        <h5 class="card-title">Total Flights</h5>
+                                                        <h6 class="display-4">@count_flights</h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                             
+             
+               
+
+
+
+                                        <div class="card border-primary" style="width: 12rem;">
+                                            <div class="card bg-light text-dark">
+                                                <div class="card-body" style="background-color:darkgrey">
+                                                    <div class="text-center">
+                                                        <h5 class="card-title">Total Passengers</h5>
+                                                        <h6 class="display-4">@count_pass</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Total Flights</h5>
+                                            <h6 class="display-4">@count_flights</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Total Passengers</h5>
+                                            <h6 class="display-4">5700</h6>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div>
+                                    <table class="table table-striped table-dark">
+                                        <tr>
+                                            <th>Total Flights</th>
+                                            <th>Total Passengers</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>@count_flights</td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                                    -->

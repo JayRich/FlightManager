@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ADO.Flight>
+
+@{
+    ViewData["Title"] = "Current Flights Scheduled";
+}
+<div class="h1 text-center">
+    Search Results
+</div>
+
+<div class="container-fluid overflow-auto">
+
+
+    <table class="table-bordered table-dark table-responsive">
+        <thead>
+            <tr style="width:fit-content">
+                <td class="h3">@Html.DisplayNameFor(model => model.Flight_Number)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Departure_Date)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Arrival_Date)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Departure_Time)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Arrival_Time)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Departure_Airport)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Arrival_Airport)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Passenger_Limit)</td>
+                <td class="h3">@Html.DisplayNameFor(model => model.Current_Passengers)</td>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var flight in Model)
+            {
+                <tr>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Flight_Number)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Departure_Date)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Arrival_Date)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Departure_Time)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Arrival_Time)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Departure_Airport)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Arrival_Airport)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Passenger_Limit)</td>
+                    <td class="h5">@Html.DisplayFor(modelitem => flight.Current_Passengers)</td>
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

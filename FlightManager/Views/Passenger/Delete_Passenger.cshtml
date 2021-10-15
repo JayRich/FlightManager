@@ -1,0 +1,32 @@
+﻿@model Passenger
+
+
+@{
+    ViewData["Title"] = "Delete Passenger";
+}
+
+
+
+<h1 class="text-center display-4">Delete Passenger</h1>
+
+<div>
+
+
+
+
+    <form class="text-center" asp-controller="Passenger" asp-action="Find_Delete_Passenger">
+        <p>
+            Passenger Id: <input type="text" name="id" />
+            <!--<input class="form-control" type="submit" value="Search" /> -->
+            <button type="submit" class="btn btn-info">Submit</button>
+        </p>
+    </form>
+
+
+
+
+
+
+
+
+</div>

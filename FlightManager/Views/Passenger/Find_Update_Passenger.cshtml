@@ -1,0 +1,15 @@
+﻿@model Passenger
+
+
+
+@{
+    var confirmation = ViewData["confirm"];
+}
+
+<h1>
+    @confirmation
+</h1>
+
+<div class="text-left">
+    <a asp-action="All_Passengers">Refresh list of passengers</a>
+</div>

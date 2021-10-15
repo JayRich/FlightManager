@@ -1,0 +1,20 @@
+﻿@model ADO.Flight
+
+
+@{
+    ViewData["Title"] = "Delete Flight";
+}
+
+
+
+  <h1 class="text-center display-4 ">Delete Flight</h1>
+            
+        
+   <div>     
+  <form class="text-center" asp-controller="Flight" asp-action="Find_Delete_Flight">
+  <p>
+  Flight Number: <input type="text" name="id" />
+ <button type="submit" class="btn btn-info">Submit</button>
+  </p>
+ </form>
+  </div>                       

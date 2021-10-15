@@ -1,0 +1,15 @@
+﻿@model ADO.Flight
+
+
+
+@{
+    var confirmation = ViewData["confirm"];
+}
+
+<h1>
+    @confirmation
+</h1>
+
+<div class="text-left display-4">
+    <a asp-action="All_Flights">Refresh list of flights</a>
+</div>

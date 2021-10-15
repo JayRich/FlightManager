@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Passenger>
+
+@{
+    ViewData["Title"] = "Display Passenger";
+}
+
+
+
+<div class="h1 text-center">
+    Search Results
+</div>
+
+<div class="container-fluid overflow-auto">
+   
+
+    <table class="table-bordered table-dark table-responsive">
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Id)</td>
+                <td>@Html.DisplayNameFor(model => model.Name)</td>
+                <td>@Html.DisplayNameFor(model => model.Job)</td>
+                <td>@Html.DisplayNameFor(model => model.Email)</td>
+                <td>@Html.DisplayNameFor(model => model.Age)</td>
+                <td>@Html.DisplayNameFor(model => model.Booking_Number)</td>
+                <td>@Html.DisplayNameFor(model => model.Flight_Number)</td>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelitem => p.Id)</td>
+                    <td>@Html.DisplayFor(modelitem => p.Name)</td>
+                    <td>@Html.DisplayFor(modelitem => p.Job)</td>
+                    <td>@Html.DisplayFor(modelitem => p.Email)</td>
+                    <td>@Html.DisplayFor(modelitem => p.Age)</td>
+                    <td>@Html.DisplayFor(modelitem => p.Booking_Number)</td>
+                    <td>@Html.DisplayFor(modelitem => p.Flight_Number)</td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
